@@ -1,7 +1,4 @@
-#Node artifact files
-node_modules/
-dist/
-
+#GIT IGNORE
 #Compiled Java class files
 *.class
 
