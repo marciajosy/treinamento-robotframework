@@ -9,4 +9,5 @@ Documentation   Aqui fica os casos de teste
 
 *** Test Cases ***
 Logando no sistema tricents
+    [Tags]  logTricents
     Dado que eu acesse o site Tricents
