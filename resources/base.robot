@@ -4,6 +4,7 @@ Documentation       Aqui teremos a estrutura base do projeto, o selenium é impo
 Library             SeleniumLibrary
 Resource            urls.robot
 Resource            map_of_keywords.robot
+Resource            map_of_elements.robot
 
 ***Keywords***
 ## hooks ##
