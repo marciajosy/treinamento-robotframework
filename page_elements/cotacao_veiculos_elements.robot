@@ -8,6 +8,8 @@ ${NAV_TRUCK}                id:nav_truck
 ${NAV_MOTORCYCLE}           id:nav_motorcycle
 ${NAV_CAMPER}               id:nav_camper
 
+${BTN_NEXT_INSURANT_DATA}   id:nextenterinsurantdata
+
 # campos de seleção
 ${DROPDOWN_MAKE}            id:make
 ${DROPDOWN_QTD_LUGARES}     id:numberofseats

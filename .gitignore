@@ -7,10 +7,10 @@
 __pycache__
 
 #Log files
-*.log
-.log/
-log/
-log/*
+*.logs
+.logs/
+logs/
+logs/*
 debug.log
 
 #Package files

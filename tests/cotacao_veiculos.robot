@@ -13,4 +13,5 @@ Preenchendo dados de um automóvel Audi
     [Tags]  dadosVeiculo
     Dado que eu acesse o site Tricents
     Quando vou para sessão Automobile
-    Então preencho campos referentes ao "Audi"
+    E escolho a opção "Audi"
+    Então preencho campos referentes ao veiculo
