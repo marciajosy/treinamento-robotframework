@@ -14,15 +14,18 @@ Quando vou para sessão Camper
     Click Element       ${NAV_CAMPER}
 
 #inicio dos fluxos de preenchimento para cotação
-Então preencho campos referentes ao "${VEICULO}"
+E escolho a opção "${VEICULO}"
     #Select From List By Value   ${DROPDOWN_MAKE}    ${VEICULO}
     Select From List By Label   ${DROPDOWN_MAKE}    ${VEICULO}
     #validação da escolha do valor/nome
     ${selected} =               Get Selected List Label     ${DROPDOWN_MAKE}
     Should Be Equal             ${selected}                 ${VEICULO}
+
+Então preencho campos referentes ao veiculo
     Input Text                  ${PERFORMANCE_VEICULAR}     200
     Input Text                  ${DATA_FABRICACAO}          08/31/2021
     Select From List By Value   ${DROPDOWN_QTD_LUGARES}     5
     Select From List By Value   ${DROPDOWN_COMBUSTIVEL}     Diesel
     Input Text                  ${VALOR_PAGAMENTO}          30000
     Input Text                  ${KM_ANUAL}                 150
+    Click Element               ${BTN_NEXT_INSURANT_DATA}
