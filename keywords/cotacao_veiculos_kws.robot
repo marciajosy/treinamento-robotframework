@@ -28,4 +28,23 @@ Então preencho campos referentes ao veiculo
     Select From List By Value   ${DROPDOWN_COMBUSTIVEL}     Diesel
     Input Text                  ${VALOR_PAGAMENTO}          30000
     Input Text                  ${KM_ANUAL}                 150
-    Click Element               ${BTN_NEXT_INSURANT_DATA}
+    Click Element               ${BTN_NEXT}
+
+E seleciono a sessão Enter Insurant Data
+    Click Element               ${SESSAO_INSURANT_DATA} 
+
+Então preencho os "${dadosCliente}"
+    Input Text                          ${CAMPO_PRIMEIRO_NOME}       ${dadosCliente['primeironome']}
+    Input Text                          ${CAMPO_ULTIMO_NOME}         ${dadosCliente['ultimoNome']}
+    Input Text                          ${DATA_NASCIMENTO}           ${dadosCliente['dataNasc']}
+
+    #selecionando RADIO BUTTON
+    Wait Until Element Is Visible       ${RADIOBUTTON_GENERO_FEM}
+    Click Element                       ${RADIOBUTTON_GENERO_FEM}
+    Input Text                          ${CAMPO_NOME_RUA}           ${dadosCliente['nomeRua']}
+    Select From List By Value           ${DROPDOWN_PAIS}            Brazil
+    Input Text                          ${CAMPO_CEP}                ${dadosCliente['cep']}
+    Input Text                          ${CAMPO_NOME_CIDADE}        ${dadosCliente['nomeCidade']}
+    Select From List By Value           ${DROPDOWN_OCUPACAO}        Employee
+    Click Element                       ${CHECKBOX_OTHER}
+    Click Element                       ${BTN_NEXT} 
